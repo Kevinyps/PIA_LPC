@@ -1,0 +1,18 @@
+Dependiendo de las tareas que quieras realizar es el parametro a ingresar ejemplo:
+
+-Para desglozar el menu de ayuda utilice el parametro -h
+
+-Para la extraccion de imagenes de una pagina web utilice -w (seguido del Url) y te descargara las imagenes en la carpeta situada
+
+-Para codificar imagenes utilice -ci (seguido del path de la imagen) y se te creara un .txt llamado imagen_codificada.txt
+
+-Para la decodificacion de imagenes utilice -di (seguido del path del .txt) y se te creara un .jpg llamado imagendecodificada.jpg
+
+-Para la obtencion de metadatos si existe en la imagen utilice -IM (seguido del path de la imagen) y se generara un archivo .txt llamado metadatos.txt
+
+-Lograr mapear puerto abiertos del servidor local en el que se examina utilice -p (Nombre del .txt en que quieres que se repita el proceso) y se generara un archivo .txt llamado registroPuertos.txt
+
+-Para activar el análisis de urls con VirusTotal utilice los parámetros -a (La llave api de VirusTotal) y -tv (seguido del path del txt con las urls a analizar).
+
+Si vez que alguno de estos no te trabajo correctamente, revisa PIA.log para ver el posible error que cometiste.
+
