@@ -2,6 +2,7 @@ import argparse
 import logging
 from programas.webscrap import imagenes
 from programas.codificador import codificadorimg
+from programas.envio_correos import envioCorreos
 from ImgMeta import metadata_img
 from puertos import analisisPuertos
 from programas.analizarUrl import analizarUrl
@@ -33,6 +34,8 @@ analizar.add_argument('-au', '--analizaURL', type= str,
 						help="Herramienta para mapeo de puertos")
 analizar.add_argument('-tv', '--txtvirus', type=str,
                     	help="Nombre del archivo con las urls")
+analizar.add_argument('-s', '--envio', type=str,
+                    	help="Envio de correos")
 
 argumentos = analizar.parse_args()
 
@@ -53,3 +56,6 @@ elif argumentos.mapeopuerto is not None:
 
 elif argumentos.analizaURL is not None:
 	analizarUrl(argumentos.txtvirus, argumentos.analizaURL)
+
+elif argumentos.envio is not None:
+	envioCorreos(argumentos.envio)
